@@ -1,9 +1,7 @@
-import "./App.css";
+import Body from "./Components/Body";
 
 function App() {
-  return (
-    <div className="text-2xl bg-pink-400 text-gray-500">Santhana Lakshmi</div>
-  );
+  return <Body />;
 }
 
 export default App;
