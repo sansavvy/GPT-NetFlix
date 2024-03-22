@@ -6,7 +6,7 @@
 - Routing of App
 - Login Form
 - Sign Up Form
-- Form Validations , useRef hook
+- Form Validations , useRef hook -to reference a tag/Element in a web page.
 
 # Features
 
