@@ -1,3 +1,7 @@
+# Deployed Live App
+
+- https://netflixgpt-fc694.web.app
+
 # Netflix GPT
 
 - Create React App
@@ -7,6 +11,12 @@
 - Login Form
 - Sign Up Form
 - Form Validations , useRef hook -to reference a tag/Element in a web page.
+- Authentication - Google Firebase setup
+  - firebase login
+  - firebase init
+  - firebase deploy
+- Integrate Authentication API for Sign In/Up
+- Add user's data in Redux store
 
 # Features
 
