@@ -18,7 +18,19 @@
 - Integrate Authentication API for Sign In/Up
 - Add user's data in Redux store
 - Implemented sign out/ updated profile
-- Integrate TMDB
+- Bug Fix - if the user is not logged in Redirect /browse to login Page and vice-versa.
+- Unscubscribed to the OnAuthStateChanged callback.
+- Add hardcoded values to the constant file
+- TMDB Configuration | Access data
+- Boiler plate for Browse
+  -Main Video Container
+  - video BG - video title
+    -Secondary Container
+  - each row has specific category of movie list (Movie \* N)
+  - cards \* N
+- Promotes Seperation of concerns - modular coding
+- Boilerplate for MainContainer & Secondary Container
+- Fetch data for trailer video data & updated the store
 
 # Features
 

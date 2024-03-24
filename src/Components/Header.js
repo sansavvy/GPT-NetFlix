@@ -1,12 +1,18 @@
 import { signOut } from "firebase/auth";
 import React, { useState } from "react";
 import { MdLogout } from "react-icons/md";
-import { auth } from "../utils/firebase";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from "../utils/firebase";
+import { useDispatch } from "react-redux";
+import { addUser, removeUser } from "../utils/userSlice";
+import { LOGO } from "../constants/constants";
 
 const Header = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [isDropDownOpen, setDropDown] = useState(false);
 
   const user = useSelector((store) => store.user);
@@ -17,19 +23,40 @@ const Header = () => {
     signOut(auth)
       .then(() => {
         setDropDown(false);
-        navigate("/");
       })
       .catch((error) => {
         // An error happened
       });
   };
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        // If user sign In/ sign up
+        const { uid, email, displayName, photoURL } = user;
+        dispatch(
+          addUser({
+            uid: uid,
+            email: email,
+            displayName: displayName,
+            photoURL: photoURL,
+          })
+        ); // put the user data in redux store
+        navigate("/browse");
+      } else {
+        //If  User is signed out
+        dispatch(removeUser());
+        navigate("/");
+      }
+    });
+
+    // Unsubscribe when component unmounts
+    return () => unsubscribe();
+  }, []);
+
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img
-        className="w-44"
-        src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
-        alt="logo"
-      />
+      <img className="w-44" src={LOGO} alt="logo" />
       <div className="flex flex-col">
         <div className="ml-8 p-2">
           <button
