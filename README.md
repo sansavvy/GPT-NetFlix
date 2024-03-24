@@ -17,6 +17,8 @@
   - firebase deploy
 - Integrate Authentication API for Sign In/Up
 - Add user's data in Redux store
+- Implemented sign out/ updated profile
+- Integrate TMDB
 
 # Features
 
