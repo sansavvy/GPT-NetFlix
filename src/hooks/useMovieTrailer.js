@@ -4,7 +4,6 @@ import { API_OPTIONS } from "../constants/constants";
 import { addTrailerVideo } from "../utils/movieSlice";
 
 const useMovieTrailer = (movieId) => {
-  console.log(movieId);
   const dispatch = useDispatch();
 
   // fetch trailer Video

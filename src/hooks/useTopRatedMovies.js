@@ -19,7 +19,6 @@ const useTopRatedMovies = () => {
     );
     const topRatedMovieData = await data.json();
 
-    console.log(topRatedMovieData);
     dispatch(addTopRatedMovies(topRatedMovieData.results)); // via this dispatch action is dispatched to put api data in store.
   };
 };

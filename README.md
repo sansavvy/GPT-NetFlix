@@ -38,6 +38,10 @@
   - Movie List - UpComing
 - Created custom hooks for every set of movie list and their resp category.
 - Fixed style issues
+- GPT Integration - seperate Slice to handle resp state variables
+- GPT Search bar, GPT Movie Suggestion
+- Multi-lang Feature Added
+- Integrate GPT API's
 
 # Features
 
