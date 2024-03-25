@@ -31,6 +31,13 @@
 - Promotes Seperation of concerns - modular coding
 - Boilerplate for MainContainer & Secondary Container
 - Fetch data for trailer video data & updated the store
+- Building Secondary Container
+  - Movie List - Popular
+  - Movie List - Now Playing
+  - Movie List - Trending
+  - Movie List - UpComing
+- Created custom hooks for every set of movie list and their resp category.
+- Fixed style issues
 
 # Features
 

@@ -2,7 +2,7 @@ import React from "react";
 import { FaPlay } from "react-icons/fa";
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="pt-[30%] px-24 absolute text-white w-screen aspect-video bg-gradient-to-r from-black">
+    <div className="pt-[20%] px-24 absolute text-white w-screen aspect-video bg-gradient-to-r from-black">
       <h1 className="text-6xl font-sans">{title}</h1>
       <p className="py-6 text-lg w-1/4">{overview}</p>
       <div className="flex">

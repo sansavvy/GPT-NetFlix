@@ -27,7 +27,7 @@ const useMovieTrailer = (movieId) => {
     );
     // filter data (only trailers)
     const trailer = filterData?.length
-      ? filterData[4]
+      ? filterData[6]
       : videosClipsOfMovie.results[0];
 
     // put the trailer data to the store
