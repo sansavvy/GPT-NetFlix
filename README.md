@@ -42,6 +42,7 @@
 - GPT Search bar, GPT Movie Suggestion
 - Multi-lang Feature Added
 - Integrate GPT API's
+- Reduced unnecessary multiple API calls through memoization - optimized component re-render
 
 # Features
 
