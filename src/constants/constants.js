@@ -25,3 +25,6 @@ export const SUPPORTED_LANGUAGES = [
 ];
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+
+export const NETFLIX_LOGO =
+  "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940";
