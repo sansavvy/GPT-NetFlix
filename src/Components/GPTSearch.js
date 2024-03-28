@@ -8,7 +8,7 @@ const GPTSearch = () => {
     <Fragment>
       <div className="fixed -z-10">
         <img
-          className="h-screen object-cover"
+          className="h-screen w-screen object-cover"
           src={LOGIN_PAGE_BG_IMAGE}
           alt="bg-img"
         />

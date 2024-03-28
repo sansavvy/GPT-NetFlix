@@ -1,16 +1,27 @@
 import React from "react";
-import { IMG_CDN_URL } from "../constants/constants";
+import { IMG_CDN_URL, NETFLIX_LOGO } from "../constants/constants";
+import { useNavigate } from "react-router-dom";
 
-const MovieCard = ({ posterPath }) => {
+const MovieCard = ({ moviedata }) => {
+  console.log(moviedata);
+
+  const navigate = useNavigate();
+
+  const handleMovieCardClick = () => {
+    navigate("/movie/" + moviedata?.id);
+  };
   return (
-    <div className="transition ease-in-out w-46 md:w-48 h-30  pr-4 hover:-translate-y-1 hover:scale-110">
-      <img alt="Movie card" src={IMG_CDN_URL + posterPath} />
+    <div
+      className="w-full max-w-full h-56 max-h-full  pr-4 hover:border-2 border-white pr-4"
+      onClick={handleMovieCardClick}
+    >
+      <img
+        alt="Netflix-logo"
+        src={NETFLIX_LOGO}
+        className="w-10 h-10 absolute z-10"
+      />
+      <img alt="Movie card" src={IMG_CDN_URL + moviedata.poster_path} />
     </div>
-    // <div class="carousel p-4">
-    //   <div class="carousel-item">
-    //     <img src={IMG_CDN_URL + posterPath} alt="Item 1" class="rounded-lg" />
-    //   </div>
-    // </div>
   );
 };
 
