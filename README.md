@@ -43,6 +43,7 @@
 - Multi-lang Feature Added
 - Integrate GPT API's
 - Reduced unnecessary multiple API calls through memoization - optimized component re-render
+- Enhanced features in APP by carousel implementation,navbar fixes and route fixes.
 
 # Features
 
