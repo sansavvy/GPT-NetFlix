@@ -3,13 +3,12 @@ import { IMG_CDN_URL, NETFLIX_LOGO } from "../constants/constants";
 import { useNavigate } from "react-router-dom";
 
 const MovieCard = ({ moviedata }) => {
-  console.log(moviedata);
-
   const navigate = useNavigate();
 
   const handleMovieCardClick = () => {
     navigate("/movie/" + moviedata?.id);
   };
+
   return (
     <div
       className="w-full max-w-full h-56 max-h-full  pr-4 hover:border-2 border-white pr-4"

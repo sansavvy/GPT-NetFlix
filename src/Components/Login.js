@@ -25,10 +25,10 @@ const Login = () => {
   const name = useRef(null);
 
   const toggleSignIn = () => {
-    setSignInForm(!isSignInForm);
     email.current.value = null;
     password.current.value = null;
-    errorMsg.errMsg = null;
+    setErrorMsg(null);
+    setSignInForm(!isSignInForm);
   };
   const checkFormValidations = () => {
     // validate the form data
