@@ -20,7 +20,7 @@ const Browse = () => {
   useTVShows();
   return (
     <div className="no-scrollbar overflow-y-auto">
-      <Header />
+      {/* <Header /> */}
       {showGptSearch ? (
         <GPTSearch />
       ) : (

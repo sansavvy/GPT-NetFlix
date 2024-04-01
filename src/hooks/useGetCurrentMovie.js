@@ -17,6 +17,7 @@ const useGetCurrentMovie = ({ movieId }) => {
     );
     const presentSelectedMovieData = await data.json();
     console.log(presentSelectedMovieData);
+
     dispatch(addPresentMovie(presentSelectedMovieData));
   };
 };

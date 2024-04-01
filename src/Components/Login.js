@@ -90,7 +90,7 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           dispatch(updateSignOut(false));
-          navigate("/browse");
+          navigate("/home");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -101,7 +101,6 @@ const Login = () => {
   };
   return (
     <div>
-      <Header />
       <div>
         <img
           className="object-cover absolute"

@@ -1,18 +1,17 @@
 import React from "react";
 import { IMG_CDN_URL, NETFLIX_LOGO } from "../constants/constants";
-import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addPresentMovie } from "../utils/movieSlice";
 
 const MovieCard = ({ moviedata }) => {
-  const navigate = useNavigate();
-
-  const handleMovieCardClick = () => {
-    navigate("/movie/" + moviedata?.id);
+  const dispatch = useDispatch();
+  const changePresentMovie = () => {
+    dispatch(addPresentMovie(moviedata));
   };
-
   return (
     <div
       className="w-full max-w-full h-56 max-h-full  pr-4 hover:border-2 border-white pr-4"
-      onClick={handleMovieCardClick}
+      onClick={changePresentMovie}
     >
       <img
         alt="Netflix-logo"

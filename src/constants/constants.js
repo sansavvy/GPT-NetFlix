@@ -32,7 +32,7 @@ export const NETFLIX_LOGO =
 export const NAVBAR = [
   {
     tabName: "Home",
-    routeUrl: "/browse",
+    routeUrl: "/home",
   },
   {
     tabName: "TV Shows",
@@ -45,5 +45,88 @@ export const NAVBAR = [
   {
     tabName: "New & Popular",
     routeUrl: "/popular",
+  },
+];
+
+export const FOOTERLINKS = [
+  {
+    name: "Col-1-data",
+    column: [
+      {
+        name: "Help Center",
+        link: "https://help.netflix.com/",
+      },
+      {
+        name: "Jobs",
+        link: "https://jobs.netflix.com/jobs",
+      },
+      {
+        name: "Cookie Preferences",
+        link: "https://www.netflix.com/in",
+      },
+      {
+        name: "Legal Notices",
+        link: "https://help.netflix.com/legal/notices",
+      },
+    ],
+  },
+  {
+    name: "Col-2-data",
+    column: [
+      {
+        name: "FAQ",
+        link: "https://help.netflix.com/support/412",
+      },
+      {
+        name: "Investor Relations",
+        link: "http://ir.netflix.com/",
+      },
+      {
+        name: "Privacy",
+        link: "https://help.netflix.com/legal/privacy",
+      },
+      {
+        name: "Speed Test",
+        link: "https://fast.com/",
+      },
+    ],
+  },
+  {
+    name: "Col-3-data",
+    column: [
+      {
+        name: "Account",
+        link: "https://www.netflix.com/youraccount",
+      },
+      {
+        name: "Ways to Watch",
+        link: "https://www.netflix.com/watch",
+      },
+      {
+        name: "Corporate Information",
+        link: "https://help.netflix.com/legal/corpinfo",
+      },
+      {
+        name: "Only on Netflix",
+        link: "https://www.netflix.com/in/browse/genre/839338",
+      },
+    ],
+  },
+  {
+    name: "Col-4-data",
+    column: [
+      {
+        name: "Media Center",
+        link: "https://media.netflix.com/",
+      },
+      {
+        name: "Terms of Use",
+        link: "https://help.netflix.com/legal/termsofuse",
+      },
+      {
+        name: "Contact Us",
+        link: "https://help.netflix.com/contactus",
+      },
+    ],
   },
 ];

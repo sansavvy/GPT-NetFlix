@@ -6,6 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import MovieCard, { WithTrending } from "./MovieCard";
+import { Link } from "react-router-dom";
+import useGetCurrentMovie from "../hooks/useGetCurrentMovie";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -38,15 +40,18 @@ const MovieSlider = ({ heading, data }) => {
         onResize={handleResize}
         className="mySwiper flex overflow-visibleF"
       >
-        {movies.map((movie, index) => (
+        {movies.map((movie) => (
           // <SwiperSlide key={movie.id} className={`${type === 'trending' ? 'w-52' : 'w-28 md:w-36'} cursor-pointer flex-grow-0 flex-shrink-0 overflow-hidden rounded`}>
           //   {type === 'trending' ? <TrendingMovieCard index={index + 1} data={movie} /> : <MovieCard data={movie} />}
           // </SwiperSlide>
+
           <SwiperSlide
             key={movie.id}
             className="w-80 h-25 cursor-pointer flex-grow-0 flex-shrink-0 overflow-hidden rounded"
           >
-            <MovieCard moviedata={movie} />
+            <Link key={movie.id} to={"/movie/" + movie.id}>
+              <MovieCard moviedata={movie} />
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

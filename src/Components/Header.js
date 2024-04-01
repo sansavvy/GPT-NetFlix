@@ -42,11 +42,11 @@ const Header = () => {
             photoURL: photoURL,
           })
         ); // put the user data in redux store
-        navigate("/browse");
+        navigate("/home");
       } else {
         //If  User is signed out
         dispatch(removeUser());
-        navigate("/");
+        navigate("/login");
       }
     });
 
