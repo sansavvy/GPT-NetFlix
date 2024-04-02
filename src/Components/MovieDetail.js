@@ -32,7 +32,7 @@ const MovieDetail = () => {
           </button>
           <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
           <h1 className="text-2xl md:text-6xl font-sans text-white">
-            {presentMovie?.title}
+            {presentMovie?.title ? presentMovie?.title : presentMovie?.name}
           </h1>
           <div className="flex justify-between w-2/4 p-4">
             <h4 className="text-white text-md">

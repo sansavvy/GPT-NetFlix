@@ -39,14 +39,11 @@ const PlayTrailer = ({ movieIdValue }) => {
       <MovieList title={"Coming this week"} movies={movies.popularMovies} />
       <MovieList
         title={"BingeWorthy TV Shows"}
-        movies={movies.topRatedMovies}
+        movies={movies.topRatedTvShows}
       />
       <MovieList title={"Action & Thriller"} movies={movies.upComingMovies} />
-      <MovieList
-        title={"Suspenseful TV Dramas"}
-        movies={movies.upComingMovies}
-      />
-      <MovieList title={"Recently Added"} movies={movies.upComingMovies} />
+      <MovieList title={"Suspenseful TV Dramas"} movies={movies.tvShows} />
+      <MovieList title={"Recently Added"} movies={movies.topRatedMovies} />
     </div>
   );
 };

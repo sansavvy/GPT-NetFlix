@@ -6,7 +6,6 @@ import SecondaryContainer from "./SecondaryContainer";
 import usePopularMovies from "../hooks/usePopularMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
 import useUpComingMovies from "../hooks/useUpComingMovies";
-import useTVShows from "../hooks/useTVShows";
 import GPTSearch from "./GPTSearch";
 import { useSelector } from "react-redux";
 
@@ -17,7 +16,7 @@ const Browse = () => {
   usePopularMovies(); // Custom hook to fetch popular movie data frm TMBD and put in the store
   useTopRatedMovies();
   useUpComingMovies();
-  useTVShows();
+
   return (
     <div className="no-scrollbar overflow-y-auto">
       {/* <Header /> */}

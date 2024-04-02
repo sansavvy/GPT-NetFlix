@@ -4,7 +4,18 @@ const movieSlice = createSlice({
   name: "movies",
   initialState: {
     nowPlayingMovies: null,
-    trailerVideo: null,
+    trailerVideo: {
+      iso_639_1: "en",
+      iso_3166_1: "US",
+      name: "Official Trailer 2",
+      key: "qqrpMRDuPfc",
+      site: "YouTube",
+      size: 2160,
+      type: "Trailer",
+      official: true,
+      published_at: "2024-02-14T17:00:47.000Z",
+      id: "65ccf7e2e210230185c421e2",
+    },
     popularMovies: null,
     topRatedMovies: null,
     upComingMovies: null,
@@ -90,6 +101,8 @@ const movieSlice = createSlice({
       vote_count: 485,
     },
     tvShows: null,
+    onTheAirShows: null,
+    topRatedTvShows: null,
     loadTraileronClick: null,
   },
   reducers: {
@@ -115,6 +128,12 @@ const movieSlice = createSlice({
     addTVShows: (state, action) => {
       state.tvShows = action.payload;
     },
+    addOnTheAirShows: (state, action) => {
+      state.onTheAirShows = action.payload;
+    },
+    addTopRatedTVShows: (state, action) => {
+      state.topRatedTvShows = action.payload;
+    },
     updateTrailer: (state, action) => {
       state.loadTraileronClick = action.payload;
     },
@@ -128,6 +147,9 @@ export const {
   addUpComingMovies,
   addPresentMovie,
   addTVShows,
+  addOnTheAirShows,
   updateTrailer,
+  addTopRatedTVShows,
 } = movieSlice.actions;
+
 export default movieSlice.reducer;

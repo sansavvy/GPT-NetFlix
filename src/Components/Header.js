@@ -14,6 +14,7 @@ import { GoSearch } from "react-icons/go";
 import { toggleProfileClick } from "../utils/configSlice";
 import Modal from "./Modal";
 import NavBar from "./NavBar";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -24,6 +25,8 @@ const Header = () => {
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
   const isSignOut = useSelector((store) => store.config.isSignOut);
   const isProfileClick = useSelector((store) => store.config.isProfileClick);
+  const location = useLocation();
+  const { pathname } = location;
 
   const clickOnProfileIcon = () => {
     dispatch(toggleProfileClick(true));
@@ -70,23 +73,8 @@ const Header = () => {
         <div>
           <div className="m-4 p-2 flex justify-between">
             <NavBar />
-            {showGptSearch && (
-              <select
-                className="m-4 p-2 bg-gray-600 text-white rounded-md cursor-pointer"
-                onChange={HandleLangChange}
-              >
-                {SUPPORTED_LANGUAGES.map((lang) => (
-                  <option
-                    className="m-2 p-2 bg-gray-600 hover:bg-opacity-20"
-                    key={lang.identifier}
-                    value={lang.identifier}
-                  >
-                    {lang.name}
-                  </option>
-                ))}
-              </select>
-            )}
-            {!showGptSearch && (
+
+            {pathname === "/browse" && (
               <button
                 className="m-4 p-2 bg-black bg-opacity-80 flex text-white rounded-md"
                 onClick={handleGPTSearchClick}
