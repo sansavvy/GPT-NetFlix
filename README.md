@@ -15,7 +15,6 @@
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/d07e754b-4f1f-4d9e-9e8c-f07c2162c683)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/0139e026-4cb1-4c16-b966-e3abe1792c4d)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/6dfea448-5a4c-4bf3-8314-cd0a60452196)
-![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/9de228a0-3158-418d-882c-814d6be8758d)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/4c721357-6431-4224-9380-3a893fc7627e)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/3e8ba249-778e-474c-94c9-1913a0549c7c)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/fa31f9c7-b391-4288-b4a2-f429d623f30e)
