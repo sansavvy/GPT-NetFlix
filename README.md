@@ -18,6 +18,8 @@
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/9de228a0-3158-418d-882c-814d6be8758d)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/4c721357-6431-4224-9380-3a893fc7627e)
 ![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/3e8ba249-778e-474c-94c9-1913a0549c7c)
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/fa31f9c7-b391-4288-b4a2-f429d623f30e)
+
 
 # Contact
 * Santhana Lakshmi - vishagasan3108@gmail.com
