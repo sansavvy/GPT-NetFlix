@@ -3,65 +3,27 @@
 - https://netflixgpt-fc694.web.app
 
 # Netflix GPT
+ The Netflix GPT App is an AI-driven platform that enhances the Netflix experience. It leverages OpenAI's GPT-3.5 model to provide personalized content recommendations .This project is for Netflix enthusiasts seeking a more engaging and customized streaming experience. It empowers users to explore content effortlessly, engage in natural language interactions, and gain a deeper understanding of their favorite shows and movies. 
 
-- Create React App
-- Install/Configured Tailwind Css
-- Header
-- Routing of App
-- Login Form
-- Sign Up Form
-- Form Validations , useRef hook -to reference a tag/Element in a web page.
-- Authentication - Google Firebase setup
-  - firebase login
-  - firebase init
-  - firebase deploy
-- Integrate Authentication API for Sign In/Up
-- Add user's data in Redux store
-- Implemented sign out/ updated profile
-- Bug Fix - if the user is not logged in Redirect /browse to login Page and vice-versa.
-- Unscubscribed to the OnAuthStateChanged callback.
-- Add hardcoded values to the constant file
-- TMDB Configuration | Access data
-- Boiler plate for Browse
-  -Main Video Container
-  - video BG - video title
-    -Secondary Container
-  - each row has specific category of movie list (Movie \* N)
-  - cards \* N
-- Promotes Seperation of concerns - modular coding
-- Boilerplate for MainContainer & Secondary Container
-- Fetch data for trailer video data & updated the store
-- Building Secondary Container
-  - Movie List - Popular
-  - Movie List - Now Playing
-  - Movie List - Trending
-  - Movie List - UpComing
-- Created custom hooks for every set of movie list and their resp category.
-- Fixed style issues
-- GPT Integration - seperate Slice to handle resp state variables
-- GPT Search bar, GPT Movie Suggestion
-- Multi-lang Feature Added
-- Integrate GPT API's
-- Reduced unnecessary multiple API calls through memoization - optimized component re-render
-- Enhanced features in APP by carousel implementation,navbar fixes and route fixes.
+# Features 🎯
+* GPT Search
+* Authentication
+* TMDB API
+* Memoization
 
-# Features
+# About the Project
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/d07e754b-4f1f-4d9e-9e8c-f07c2162c683)
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/0139e026-4cb1-4c16-b966-e3abe1792c4d)
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/6dfea448-5a4c-4bf3-8314-cd0a60452196)
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/9de228a0-3158-418d-882c-814d6be8758d)
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/4c721357-6431-4224-9380-3a893fc7627e)
+![image](https://github.com/sansavvy/GPT-NetFlix/assets/68282393/3e8ba249-778e-474c-94c9-1913a0549c7c)
 
-- Home Page - For Not logged In User
-  - Login/Sign Up
-    - Sign In/ Sign Up Form
-    - redirect to Browse Page
+# Contact
+* Santhana Lakshmi - vishagasan3108@gmail.com
+* Project Link - https://github.com/sansavvy/GPT-NetFlix
 
--Browse Page - For Logged In User (Post Authentication)
 
-- Header
-- Main Movie
 
-  - Trailer in Background
-  - Movie Title & Description
-  - Movie Suggestions
-    - Movies List \* N
 
-- NetFlixGPT
-  - Search Bar
-  - movie Suggestions
+
